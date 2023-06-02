@@ -1,0 +1,9 @@
+image: gitpod/workspace-full-vnc
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
+tasks:
+  - init: python -m pip install pygame
+    command: python game_GUI_Sudoku.py
